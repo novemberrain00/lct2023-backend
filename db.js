@@ -1,10 +1,10 @@
 import mysql from 'mysql';
 
 let conn = mysql.createConnection({
-  host     : 'localhost',
+  host     : '194.58.98.232',
   user     : 'root',
-  database : 'lct',
-  password : ''
+  database : 'lct2023',
+  password : 'Lct2023lctdb*'
 });
 
 conn.connect(function(err) {
