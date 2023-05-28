@@ -1,4 +1,5 @@
 export const pdfTemplate = ({
+    orgType,
     industry,
     employees,
     region,
@@ -2230,39 +2231,39 @@ export const pdfTemplate = ({
                             <div class="t m0 x9 h9 y25 ff3 fs4 fc3 sc0 ls0 ws0">ИНФОРМАЦИЯ<span class="_"> </span>О<span class="_ _b"> </span>ВАШЕЙ<span class="_"> </span>ОРГАНИЗАЦИИ</div>
                             <div class="t m0 xa hb y26 ff6 fs6 fc1 sc0 ls0 ws0">ОТРАСЛЬ:</div>
                             <div class="t m0 xb ha y27 ff2 fs5 fc1 sc1 ls0 ws0">
-                                под<span class="_ _3"></span>тягивается<span class="_ _3"></span> <span class="_ _0"></span>выб<span class="_ _3"></span>ранная поль<span class="_ _3"></span>зователем <span class="_ _0"></span>на
+                                <span class="_ _3">${industry}</span><span class="_ _3"></span> <span class="_ _0"></span><span class="_ _3"></span><span class="_ _3"></span><span class="_ _0"></span>
                             </div>
-                            <div class="t m0 xb ha y28 ff2 fs5 fc1 sc1 ls0 ws0">эле<span class="_ _3"></span>ктр.сервисе<span class="_"> </span>от<span class="_ _3"></span>расль</div>
+                            <div class="t m0 xb ha y28 ff2 fs5 fc1 sc1 ls0 ws0"><span class="_ _3"></span><span class="_"> </span><span class="_ _3"></span></div>
                         </div>
                         <div class="c x2 y29 w3 hc">
                             <div class="t m0 xc hd y2a ff3 fs6 fc1 sc0 ls0 ws0">ТИП ОРГАНИЗАЦИИ<span class="_ _0"></span>:</div>
                         </div>
                         <div class="c x0 y1 w2 h0">
-                            <div class="t m0 xb ha y2b ff2 fs5 fc1 sc0 ls0 ws0">(подтягивается выбранная пользователем</div>
-                            <div class="t m0 xb ha y2c ff2 fs5 fc1 sc0 ls0 ws0">на электр.серви<span class="_ _3"></span>се<span class="_"> </span>характеристика</div>
-                            <div class="t m0 xb ha y2d ff2 fs5 fc1 sc0 ls0 ws0">(индивидуальный предприниматель</div>
-                            <div class="t m0 xb ha y2e ff2 fs5 fc1 sc0 ls0 ws0">или ООО))</div>
+                            <div class="t m0 xb ha y2b ff2 fs5 fc1 sc0 ls0 ws0"></div>
+                            <div class="t m0 xb ha y2c ff2 fs5 fc1 sc0 ls0 ws0">${orgType}<span class="_ _3"></span><span class="_"> </span></div>
+                            <div class="t m0 xb ha y2d ff2 fs5 fc1 sc0 ls0 ws0"></div>
+                            <div class="t m0 xb ha y2e ff2 fs5 fc1 sc0 ls0 ws0"></div>
                             <div class="t m0 xa hd y2f ff3 fs6 fc1 sc0 ls0 ws0">КОЛИЧЕСТВО</div>
                             <div class="t m0 xa hd y30 ff3 fs6 fc1 sc0 ls0 ws0">СОТРУДНИКОВ:</div>
-                            <div class="t m0 xb ha y31 ff2 fs5 fc1 sc0 ls0 ws0">(подтягивается установленная пользователем</div>
-                            <div class="t m0 xb ha y32 ff2 fs5 fc1 sc0 ls0 ws0">на электр.серви<span class="_ _3"></span>се<span class="_"> </span>численность персонала)</div>
+                            <div class="t m0 xb ha y31 ff2 fs5 fc1 sc0 ls0 ws0">${employees}</div>
+                            <div class="t m0 xb ha y32 ff2 fs5 fc1 sc0 ls0 ws0"><span class="_ _3"></span><span class="_"> </span></div>
                             <div class="t m0 xa hd y33 ff3 fs6 fc1 sc0 ls0 ws0">РАЙОН</div>
                             <div class="t m0 xa hd y34 ff3 fs6 fc1 sc0 ls0 ws0">РАСПОЛОЖЕНИЯ</div>
                             <div class="t m0 xa hd y35 ff3 fs6 fc1 sc0 ls0 ws0">ПРОИЗВОДСТВА:</div>
-                            <div class="t m0 xb ha y36 ff2 fs5 fc1 sc0 ls0 ws0">(подтягивается выбранный пользователем на</div>
-                            <div class="t m0 xb ha y37 ff2 fs5 fc1 sc0 ls0 ws0">электр.серви<span class="_ _3"></span>се<span class="_"> </span>район или адм.округ<span class="ff4">)</span></div>
+                            <div class="t m0 xb ha y36 ff2 fs5 fc1 sc0 ls0 ws0">${region}</div>
+                            <div class="t m0 xb ha y37 ff2 fs5 fc1 sc0 ls0 ws0"><span class="_ _3"></span><span class="_"> </span><span class="ff4"></span></div>
                             <div class="t m0 x9 he y38 ff3 fs7 fc3 sc0 ls0 ws0">ИТОГОВЫ<span class="_ _0"></span>Е ЗНАЧЕНИЯ <span class="_ _3"></span>ВОЗМОЖНЫХ ЗАТРАТ</div>
                             <div class="t m0 xa hb y39 ff6 fs6 fc1 sc0 ls0 ws0">ИТОГО ВО<span class="_ _0"></span>ЗМОЖНЫХ</div>
                             <div class="t m0 xa hb y3a ff6 fs6 fc1 sc0 ls0 ws0">РАСХОДОВ</div>
-                            <div class="t m0 xd ha y3b ff2 fs5 fc1 sc1 ls0 ws0">от<span class="_ _3"></span>…до…, <span class="_ _0"></span>в млн<span class="_ _3"></span>. <span class="_ _0"></span>руб.</div>
+                            <div class="t m0 xd ha y3b ff2 fs5 fc1 sc1 ls0 ws0"><span class="_ _3">${totalRate}</span> <span class="_ _0"></span><span class="_ _3"></span> <span class="_ _0"></span></div>
                         </div>
                         <div class="c x2 y3c w4 hf"><div class="t m0 xc h8 y3d ff3 fs3 fc4 sc0 ls0 ws0">ДЕТАЛИ РАСХОДОВ</div></div>
                         <div class="c x0 y1 w2 h0">
-                            <div class="t m0 xa hd y3e ff3 fs6 fc1 sc0 ls0 ws0">ПЕРСОНАЛ</div>
+                            <div class="t m0 xa hd y3e ff3 fs6 fc1 sc0 ls0 ws0">ПЕРСОНАЛ                ${employeesRate}</div>
                             <div class="t m0 xa hd y3f ff3 fs6 fc1 sc0 ls0 ws0">АРЕНДА ОБЪЕКТОВ</div>
-                            <div class="t m0 xa h10 y40 ff3 fs8 fc1 sc0 ls0 ws0">НЕДВИЖИМОСТИ</div>
-                            <div class="t m0 xa hd y41 ff3 fs6 fc1 sc0 ls0 ws0">НАЛОГИ</div>
-                            <div class="t m0 xa hd y42 ff3 fs6 fc1 sc0 ls0 ws0">УСЛУГИ</div>
+                            <div class="t m0 xa h10 y40 ff3 fs8 fc1 sc0 ls0 ws0">НЕДВИЖИМОСТИ           ${rentRate}</div>
+                            <div class="t m0 xa hd y41 ff3 fs6 fc1 sc0 ls0 ws0">НАЛОГИ                      ${taxes}</div>
+                            <div class="t m0 xa hd y42 ff3 fs6 fc1 sc0 ls0 ws0">ОБОРУДОВАНИЕ                ${other}</div>
                         </div>
                     </div>
                     <div class="pi" data-data='{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'></div>
@@ -2282,7 +2283,7 @@ export const pdfTemplate = ({
                         <div class="t m0 xe ha y46 ff2 fs5 fc1 sc1 ls0 ws0">от<span class="_ _3"></span>…до…, <span class="_ _0"></span>в млн<span class="_ _3"></span>. <span class="_ _0"></span>руб.</div>
                         <div class="t m0 xa hd y47 ff3 fs6 fc1 sc0 ls0 ws0">ПЛАНИРУЕМАЯ ЧИСЛЕННОСТЬ</div>
                         <div class="t m0 xa hd y48 ff3 fs6 fc1 sc0 ls0 ws0">ПЕРСОНАЛА</div>
-                        <div class="t m0 xe ha y49 ff2 fs5 fc1 sc0 ls0 ws0">человек</div>
+                        <div class="t m0 xe ha y49 ff2 fs5 fc1 sc0 ls0 ws0">${employees}</div>
                         <div class="t m0 xa hd y4a ff3 fs6 fc1 sc0 ls0 ws0">СТРАХОВЫЕ <span class="_ _0"></span>ВЗНОСЫ</div>
                         <div class="t m0 xa hd y4b ff3 fs6 fc1 sc0 ls0 ws0">(ПЕНСИОННОЕ <span class="_ _0"></span>СТРАХОВАНИЕ)</div>
                         <div class="c xf y4c w5 h11"><div class="t m0 xc h12 y4d ff7 fs4 fc1 sc0 ls0 ws0">«от…до…, в млн.руб.»</div></div>
