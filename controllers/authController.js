@@ -31,8 +31,6 @@ const registration = async (req, response) => {
     const user = await fetch(`http://localhost:8000/auth/user?inn=${inn}`)
     .then(response => response.json())
     .then(result => result);
-
-    console.log(user);
     if(user.length === 0) {
         //доделать хэширование паролей если будет время
         //const hash = bcrypt.hashSync(password, 10);
