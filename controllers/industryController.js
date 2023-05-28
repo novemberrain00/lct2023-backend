@@ -75,6 +75,7 @@ const getReportFile = (req, res) => {
     res.sendFile(`${__dirname}/report.pdf`);
 }
 
+
 export {
     getIndustries,
     getSubindustries, 
@@ -82,5 +83,5 @@ export {
     getHardware, 
     getHardwareById,
     generateReportFile,
-    getReportFile
+    getReportFile,
 };

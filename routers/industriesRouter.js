@@ -6,7 +6,7 @@ import {
     getHardware, 
     getHardwareById,
     generateReportFile,
-    getReportFile
+    getReportFile,
 } from "../controllers/industryController.js";
 
 const industriesRouter = new Router();
